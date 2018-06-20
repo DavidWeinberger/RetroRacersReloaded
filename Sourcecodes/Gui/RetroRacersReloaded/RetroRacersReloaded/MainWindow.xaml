@@ -1,0 +1,21 @@
+﻿<Window x:Class="RetroRacersReloaded.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RetroRacersReloaded"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920"  WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
+    <Grid Margin="0,0,2,-21">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/background.jpg"></ImageBrush></Grid.Background>
+        <Label Content="Retro Racers Reloaded" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" FontFamily="Chiller" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="moneyLabel" Content="Money: 0 Coins" HorizontalAlignment="Right" Margin="0,00,20,0" VerticalAlignment="Top" FontFamily="Chiller" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Gold"/>
+        <Button Content="Beenden" HorizontalAlignment="Center" Margin="0,512,0,0" VerticalAlignment="Top" Width="151" Height="86" Click="QuitButton_Click" FontFamily="Chiller" FontSize="48" Background="#FFDC9D71"/>
+        <Button Name="onePl" Content="Einzelspieler" HorizontalAlignment="Center" Margin="500,206,0,0" VerticalAlignment="Top" Width="224" Height="92"  FontFamily="Chiller" FontSize="48" Background="#FFDC9D71" Click="SPButton_Click"/>
+        <Button Name="manyPl" Content="Mehrspieler" HorizontalAlignment="Center" Margin="0,206,500,0" VerticalAlignment="Top" Width="224" Height="92" FontFamily="Chiller" FontSize="48" Background="#FFDC9D71" Click="MPButton_Click"/>
+        <Button Content="Hall of Fame" HorizontalAlignment="Center" Margin="0,366,0,0" VerticalAlignment="Top" Width="300" Height="92" FontFamily="Chiller" FontSize="48" Background="#FFDC9D71" Click="HOSFButton_Click"/>
+        <Button Name="shopBt" Content="Shop" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Width="151" Height="92" FontFamily="Chiller" FontSize="48" Background="#FFDC9D71" Click="ShopButton_Click"/>
+
+    </Grid>
+</Window>

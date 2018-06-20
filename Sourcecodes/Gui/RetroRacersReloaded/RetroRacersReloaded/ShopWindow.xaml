@@ -1,0 +1,29 @@
+﻿<Window x:Class="RetroRacersReloaded.ShopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RetroRacersReloaded"
+        mc:Ignorable="d"
+        Title="singlePlayer" Height="1080" Width="1920" WindowStyle="None" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/background.jpg"></ImageBrush>
+        </Grid.Background>
+        <Button Content="Zurück" HorizontalAlignment="Center" Margin="0,0,330,70" VerticalAlignment="Bottom" Width="110" Height="37" Click="back_Click" />
+        <Button Name="arrowLeft" Content="←" HorizontalAlignment="Center" Margin="0,0,110,70" VerticalAlignment="Bottom" Width="110" Height="37" Click="backMap_Click" FontSize="20"/>
+        <Button Name="arrowRight" Content="→" HorizontalAlignment="Center" Margin="110,0,0,70" VerticalAlignment="Bottom" Width="110" Height="37" Click="nextMap_Click" FontSize="20"/>
+        <Button Name="buyButton" Content="Kaufen" HorizontalAlignment="Center" Margin="330,0,0,70" VerticalAlignment="Bottom"  Width="110" Height="37" Click="buy_Click"/>
+        <Image Name="ShopPrev" HorizontalAlignment="Center" Height="500" Margin="0,0,0,0" VerticalAlignment="Center" Width="888" />
+        <Label HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Height="110" Width="160">
+            <Label Content="Shop" FontSize="100" FontWeight="Heavy" FontFamily="Chiller"/>
+        </Label>
+        <Label HorizontalAlignment="Center" Margin="0,0,0,130" VerticalAlignment="Bottom" Height="70" Width="300">
+            <Label Content="Preis: 100 Coins" FontSize="50" FontWeight="Heavy" FontFamily="Chiller"/>
+        </Label>
+        <Label HorizontalAlignment="Center" Margin="0,0,0,200" VerticalAlignment="Bottom">
+            <Label Name="mapName" Content="Karten Name: " FontSize="50" FontWeight="Heavy" FontFamily="Chiller"/>
+        </Label>
+        <Label Name="moneyShopLabel" Content="Money: 0 Coins" HorizontalAlignment="Right" Margin="0,00,20,0" VerticalAlignment="Top" FontFamily="Chiller" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Gold"/>
+    </Grid>
+</Window>

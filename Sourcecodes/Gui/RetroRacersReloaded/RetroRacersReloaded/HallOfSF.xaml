@@ -1,0 +1,19 @@
+﻿<Window x:Class="RetroRacersReloaded.HallOfSF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RetroRacersReloaded"
+        mc:Ignorable="d"
+        Title="HallOfSF" Height="1080" Width="1920"  WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/background.jpg"></ImageBrush>
+        </Grid.Background>
+        <Button Content="Zurück" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="136" Margin="0,0,40,33" Click="Button_Click" Height="37"/>
+        <Button Content="Zurücksetzen" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="136" Margin="40,0,0,33" Click="Reset_Click" Height="37"/>
+        <ComboBox x:Name="comboBx" HorizontalAlignment="Center" VerticalAlignment="Top" Width="800" Margin="0,100,0,0" SelectionChanged="comboBx_SelectionChanged"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Center" Height="600" Margin="0,122,0,0" VerticalAlignment="Top" Width="800"/>
+
+    </Grid>
+</Window>
