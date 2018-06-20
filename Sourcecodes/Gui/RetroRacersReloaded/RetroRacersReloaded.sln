@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetroRacersReloaded", "RetroRacersReloaded\RetroRacersReloaded.csproj", "{81910DFB-C2BA-4412-8F45-9C98FFEFD6FA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RetroRacersReloadedSetup", "RetroRacersReloadedSetup\RetroRacersReloadedSetup.vdproj", "{C5437C57-A152-4C60-B866-01A17C3E17FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81910DFB-C2BA-4412-8F45-9C98FFEFD6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81910DFB-C2BA-4412-8F45-9C98FFEFD6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81910DFB-C2BA-4412-8F45-9C98FFEFD6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81910DFB-C2BA-4412-8F45-9C98FFEFD6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5437C57-A152-4C60-B866-01A17C3E17FD}.Debug|Any CPU.ActiveCfg = Debug
+		{C5437C57-A152-4C60-B866-01A17C3E17FD}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDF9AF80-D2D4-4469-B438-17490CD87D24}
+	EndGlobalSection
+EndGlobal
