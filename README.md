@@ -20,3 +20,6 @@ Sourcecode:
     
 License:  
   https://github.com/DavidWeinberger/RetroRacersReloaded/blob/master/LICENSE  
+  
+Time Monitoring:  
+https://github.com/DavidWeinberger/RetroRacersReloaded/blob/master/TimeMonitoring.pdf
