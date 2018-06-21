@@ -47,7 +47,8 @@ namespace RetroRacersReloaded
                 path += "\\Shop\\money.txt";
                 if (!File.Exists(path))
                 {
-                    File.Create(path);
+                    var test = File.Create(path);
+                    test.Close();
                 }
                 else
                 {
@@ -56,6 +57,7 @@ namespace RetroRacersReloaded
                     {
                         moneyLabel.Content = "Money: " + money[0] + " Coins";
                     }
+                    
                 }
             }
             
@@ -126,7 +128,7 @@ namespace RetroRacersReloaded
         {
             if (fred.IsAlive)
             {
-                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert\nGame nicht schließen", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }        
             Window window = new singlePlayer(this.ActualHeight);
@@ -140,7 +142,7 @@ namespace RetroRacersReloaded
         {
             if (fred.IsAlive)
             {
-                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert\nGame nicht schließen", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             Window window = new ShopWindow(this.ActualHeight, this.ActualWidth);
@@ -154,7 +156,7 @@ namespace RetroRacersReloaded
         {
             if (fred.IsAlive)
             {
-                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Einige Datein werden noch entpackt, dies könnte etwas dauern. Versuchen sie es Später erneuert\nGame nicht schließen", "Datein werden entpackt", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             Window window = new multiplayer(this.ActualHeight-14);

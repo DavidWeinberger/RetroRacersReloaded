@@ -38,14 +38,23 @@ namespace RetroRacersReloaded
 
             if (!File.Exists(path))
             {
-                File.Create(path);
+                var test = File.Create(path);
+                test.Close();
             }
             else
             {
                 string[] money = File.ReadAllLines(path);
-                moneyShopLabel.Content = "Money: " + money[0] + " Coins";
+                if (money.Length != 0)
+                {
+                    moneyShopLabel.Content = "Money: " + money[0] + " Coins";
+                    moneyAmount = Convert.ToInt32(money[0]);
+                }
+                else
+                {
+                    moneyAmount = 0;
+                }
 
-                moneyAmount = Convert.ToInt32(money[0]);
+                
             }
             if (moneyAmount < 100)
             {
