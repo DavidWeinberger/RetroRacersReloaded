@@ -1,7 +1,7 @@
 # RetroRacersReloaded
 
 Installing:  
-  https://github.com/DavidWeinberger/RetroRacersReloaded/releases/tag/msi  
+  https://github.com/DavidWeinberger/RetroRacersReloaded/releases/tag/v1.0  
   Download the RetroReacerReloaded.msi -> Run the RetroRacersReloaded.msi  
   ->it will create a Desktop shortcut automataclly-> Finish  
     
